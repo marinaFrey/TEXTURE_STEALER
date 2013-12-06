@@ -1,0 +1,11 @@
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\bin\Debug\TextureStealer.exe
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\bin\Debug\TextureStealer.pdb
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\bin\Debug\TextureStealer.xml
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.Form1.resources
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.Resources.resources
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.exe
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.xml
+c:\users\marina\documents\visual studio 2010\Projects\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.pdb
