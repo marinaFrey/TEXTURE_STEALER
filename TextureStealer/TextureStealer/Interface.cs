@@ -20,5 +20,20 @@ namespace TextureStealer
         {
 
         }
+
+        private void openHelpWindow(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectTextureBrush(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectTextureFilling(object sender, EventArgs e)
+        {
+
+        }
     }
 }
