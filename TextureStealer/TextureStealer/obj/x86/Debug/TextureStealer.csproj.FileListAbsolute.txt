@@ -1,0 +1,9 @@
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\bin\Debug\TextureStealer.exe
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\bin\Debug\TextureStealer.pdb
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.Interface.resources
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.Properties.Resources.resources
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.exe
+C:\Users\Marina\Documents\GitHub\TEXTURE_STEALER\TextureStealer\TextureStealer\obj\x86\Debug\TextureStealer.pdb

@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace TextureStealer
 {
-    public partial class Form1 : Form
+    public partial class Interface : Form
     {
-        public Form1()
+        public Interface()
         {
             InitializeComponent();
+        }
+
+        private void openImageFile(object sender, EventArgs e)
+        {
+
         }
     }
 }
