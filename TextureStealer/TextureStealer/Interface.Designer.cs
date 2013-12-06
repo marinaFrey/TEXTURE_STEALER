@@ -88,7 +88,7 @@
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Text = "Ajuda";
             this.toolStripButton1.Click += new System.EventHandler(this.openHelpWindow);
             // 
             // openImageFileButton
@@ -98,7 +98,7 @@
             this.openImageFileButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openImageFileButton.Name = "openImageFileButton";
             this.openImageFileButton.Size = new System.Drawing.Size(23, 22);
-            this.openImageFileButton.Text = "toolStripButton2";
+            this.openImageFileButton.Text = "Abrir Arquivo";
             this.openImageFileButton.Click += new System.EventHandler(this.openImageFile);
             // 
             // toolStripButton3
@@ -108,7 +108,7 @@
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.Text = "Balde";
             this.toolStripButton3.Click += new System.EventHandler(this.selectTextureFilling);
             // 
             // toolStripButton4
@@ -118,7 +118,7 @@
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton4.Text = "toolStripButton4";
+            this.toolStripButton4.Text = "Pincel";
             this.toolStripButton4.Click += new System.EventHandler(this.selectTextureBrush);
             // 
             // newImageBox

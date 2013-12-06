@@ -11,6 +11,12 @@ namespace TextureStealer
 {
     public partial class Interface : Form
     {
+        private const int IMG_W = 500;
+        private const int IMG_H = 500;
+
+        private Image originalImage;
+        private Image newImage;
+
         public Interface()
         {
             InitializeComponent();
