@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Interface));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.originalImageBox = new System.Windows.Forms.PictureBox();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.openImageFileButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.originalImageBox = new System.Windows.Forms.PictureBox();
             this.newImageBox = new System.Windows.Forms.PictureBox();
             this.textureBox = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
@@ -57,33 +57,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(384, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel1.Controls.Add(this.originalImageBox, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.newImageBox, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textureBox, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(384, 237);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // originalImageBox
-            // 
-            this.originalImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.originalImageBox.Location = new System.Drawing.Point(3, 3);
-            this.originalImageBox.Name = "originalImageBox";
-            this.originalImageBox.Size = new System.Drawing.Size(166, 231);
-            this.originalImageBox.TabIndex = 0;
-            this.originalImageBox.TabStop = false;
-            this.originalImageBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.captureTexture);
             // 
             // toolStripButton1
             // 
@@ -125,6 +98,33 @@
             this.toolStripButton4.Text = "Pincel";
             this.toolStripButton4.Click += new System.EventHandler(this.selectTextureBrush);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tableLayoutPanel1.Controls.Add(this.originalImageBox, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.newImageBox, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textureBox, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(384, 237);
+            this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // originalImageBox
+            // 
+            this.originalImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.originalImageBox.Location = new System.Drawing.Point(3, 3);
+            this.originalImageBox.Name = "originalImageBox";
+            this.originalImageBox.Size = new System.Drawing.Size(166, 231);
+            this.originalImageBox.TabIndex = 0;
+            this.originalImageBox.TabStop = false;
+            this.originalImageBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.captureTexture);
+            // 
             // newImageBox
             // 
             this.newImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -133,6 +133,7 @@
             this.newImageBox.Size = new System.Drawing.Size(168, 231);
             this.newImageBox.TabIndex = 1;
             this.newImageBox.TabStop = false;
+            this.newImageBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.drawTexture);
             // 
             // textureBox
             // 

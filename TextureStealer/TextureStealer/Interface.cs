@@ -13,6 +13,7 @@ namespace TextureStealer
     {
         private const int IMG_W = 500;
         private const int IMG_H = 500;
+        private const int CIRCLE_SIZE = 10;
 
         private Image originalImage;
         private Image newImage;
@@ -21,10 +22,12 @@ namespace TextureStealer
         private bool isFill;
         private bool isBrush;
         private bool isSecondPoint;
-        private bool hasSelection;
+        private bool hasFillSelection;
+        private bool hasBrushSelection;
 
         Point firstPoint;
         Point secondPoint;
+        Point fillPoint;
         
         public Interface()
         {
@@ -63,7 +66,8 @@ namespace TextureStealer
             isBrush = true;
             isFill = false;
             isSecondPoint = false;
-            hasSelection = false;
+            hasBrushSelection = false;
+            hasFillSelection = false;
         }
 
         private void selectTextureFilling(object sender, EventArgs e)
@@ -71,7 +75,8 @@ namespace TextureStealer
             isFill = true;
             isBrush = false;
             isSecondPoint = false;
-            hasSelection = false;
+            hasFillSelection = false;
+            hasBrushSelection = false;
         }
 
         private void captureTexture(object sender, MouseEventArgs e)
@@ -90,6 +95,8 @@ namespace TextureStealer
                     line.DrawLine(pen, firstPoint, secondPoint);
                     originalImageBox.Image = drawing;
                     isSecondPoint = false;
+                    hasBrushSelection = true;
+                    hasFillSelection = false;
                 }
                 else
                 {
@@ -99,7 +106,7 @@ namespace TextureStealer
 
                     Bitmap drawing = new Bitmap(originalImage);
                     Graphics point = Graphics.FromImage(drawing);
-                    Rectangle rec = new Rectangle(firstPoint.X, firstPoint.Y, 10, 10);
+                    Rectangle rec = new Rectangle(firstPoint.X, firstPoint.Y, CIRCLE_SIZE, CIRCLE_SIZE);
                     Pen pen = new Pen(Color.Blue);
                     point.DrawEllipse(pen, rec);
                     originalImageBox.Image = drawing;
@@ -163,6 +170,8 @@ namespace TextureStealer
                         textureArea = originalDraw.Clone(rec, format);
                         textureBox.Image = textureArea;
                         isSecondPoint = false;
+                        hasFillSelection = true;
+                        hasBrushSelection = false;
 
                     }
                     else
@@ -184,6 +193,37 @@ namespace TextureStealer
             }
         
 
+        }
+
+
+
+        private void drawTexture(object sender, MouseEventArgs e)
+        {
+            if (isBrush)
+            {
+                if (hasBrushSelection)
+                {
+
+                }
+            }
+            else
+            {
+                if (isFill)
+                {
+                    if (hasFillSelection)
+                    {
+                        //usaremos Graphics.FillRegion, para isso precisamos criar uma Region
+                        fillPoint.X = e.X;
+                        fillPoint.Y = e.Y;
+                        Bitmap drawing = new Bitmap(newImage);
+                        Graphics imageGraphics = Graphics.FromImage(drawing);
+                        Graphics textureGraphics = Graphics.FromImage(textureArea);
+
+
+
+                    }
+                }
+            }
         }
     }
 }
