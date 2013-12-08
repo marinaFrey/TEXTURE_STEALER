@@ -80,6 +80,7 @@
             this.originalImageBox.Size = new System.Drawing.Size(166, 231);
             this.originalImageBox.TabIndex = 0;
             this.originalImageBox.TabStop = false;
+            this.originalImageBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.captureTexture);
             // 
             // toolStripButton1
             // 
