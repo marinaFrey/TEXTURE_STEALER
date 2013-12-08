@@ -96,6 +96,12 @@ namespace TextureStealer
                     firstPoint.X = e.X;
                     firstPoint.Y = e.Y;
 
+                    Bitmap drawing = new Bitmap(originalImage);
+                    Graphics point = Graphics.FromImage(drawing);
+                    Rectangle rec = new Rectangle(firstPoint.X, firstPoint.Y, 10, 10);
+                    Pen pen = new Pen(Color.Blue);
+                    point.DrawEllipse(pen, rec);
+                    originalImageBox.Image = drawing;
                     isSecondPoint = true;
                 }
 
@@ -159,7 +165,12 @@ namespace TextureStealer
                         //seta primeiro ponto da textura
                         firstPoint.X = e.X;
                         firstPoint.Y = e.Y;
-
+                        Bitmap drawing = new Bitmap(originalImage);
+                        Graphics point = Graphics.FromImage(drawing);
+                        Rectangle rec = new Rectangle(firstPoint.X, firstPoint.Y, 10, 10);
+                        Pen pen = new Pen(Color.Blue);
+                        point.DrawEllipse(pen, rec);
+                        originalImageBox.Image = drawing;
                         isSecondPoint = true;
                     }
 
