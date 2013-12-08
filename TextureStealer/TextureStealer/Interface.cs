@@ -16,6 +16,7 @@ namespace TextureStealer
 
         private Image originalImage;
         private Image newImage;
+        private Bitmap textureArea;
 
         private bool isFill;
         private bool isBrush;
@@ -155,10 +156,14 @@ namespace TextureStealer
                             
                         }
 
-
+                        Bitmap originalDraw = new Bitmap(originalImage);
                         square.DrawRectangle(pen,rec);
                         originalImageBox.Image = drawing;
+                        System.Drawing.Imaging.PixelFormat format = drawing.PixelFormat;
+                        textureArea = originalDraw.Clone(rec, format);
+                        textureBox.Image = textureArea;
                         isSecondPoint = false;
+
                     }
                     else
                     {

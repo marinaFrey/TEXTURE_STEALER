@@ -37,10 +37,12 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.newImageBox = new System.Windows.Forms.PictureBox();
+            this.textureBox = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.originalImageBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newImageBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -64,6 +66,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel1.Controls.Add(this.originalImageBox, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.newImageBox, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textureBox, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -131,6 +134,15 @@
             this.newImageBox.TabIndex = 1;
             this.newImageBox.TabStop = false;
             // 
+            // textureBox
+            // 
+            this.textureBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textureBox.Location = new System.Drawing.Point(175, 184);
+            this.textureBox.Name = "textureBox";
+            this.textureBox.Size = new System.Drawing.Size(32, 50);
+            this.textureBox.TabIndex = 2;
+            this.textureBox.TabStop = false;
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,6 +157,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.originalImageBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newImageBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,6 +173,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox originalImageBox;
         private System.Windows.Forms.PictureBox newImageBox;
+        private System.Windows.Forms.PictureBox textureBox;
     }
 }
 
