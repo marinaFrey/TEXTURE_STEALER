@@ -24,7 +24,21 @@ namespace TextureStealer
 
         private void openImageFile(object sender, EventArgs e)
         {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                originalImageBox.Image = Image.FromFile(dialog.FileName);
+                originalImage = Image.FromFile(dialog.FileName);
 
+                originalImageBox.Width = originalImage.Width;
+                originalImageBox.Height = originalImage.Height;
+
+                Bitmap drawing = new Bitmap(originalImage.Width, originalImage.Height);
+                Graphics graphics = Graphics.FromImage(drawing);
+                graphics.Clear(Color.White);
+                newImageBox.Image = drawing;
+            }
         }
 
         private void openHelpWindow(object sender, EventArgs e)
